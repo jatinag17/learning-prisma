@@ -8,4 +8,8 @@ app.get("/", (req, res) => {
   return res.send("Hi Everyone.");
 });
 
+// * Routes file
+import routes from "./routes/index.js";
+app.use(routes);
+
 app.listen(PORT, () => console.log(`Server is listening on PORT ${PORT}`));
