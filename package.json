@@ -1,7 +1,7 @@
 {
   "name": "prisma",
   "version": "1.0.0",
-  "description": "Prisma is a modern, open-source alternative to traditional ORMs.",
+  "description": "",
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -19,8 +19,10 @@
     "url": "https://github.com/jatinag17/learning-prisma/issues"
   },
   "homepage": "https://github.com/jatinag17/learning-prisma#readme",
-  "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "@prisma/client": "^6.2.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "prisma": "^6.2.1"
   }
 }
