@@ -1,7 +1,12 @@
 import { Router } from "express";
-import UserRoutes from "./userRoutes.js"
-const router=Router();
+import UserRoutes from "./userRoutes.js";
+import PostRoutes from "./postRoutes.js";
 
-router.use("/api/user",UserRoutes); 
+const router = Router();
 
-export default router
+router.use("/api/user", UserRoutes);
+
+// for post route
+router.use("/api/post", PostRoutes);
+
+export default router;
