@@ -13,9 +13,16 @@ export const fetchPosts = async (req, res) => {
         },
       },
     },
-    orderBy:{
-      id:"desc",
-    }
+    orderBy: {
+      id: "desc",
+    },
+    where: {
+      NOT: {
+        title: {
+          endsWith: "Blog",
+        },
+      },
+    },
   });
   return res.json({ status: 200, data: posts, msg: "Users fetched." });
 };
